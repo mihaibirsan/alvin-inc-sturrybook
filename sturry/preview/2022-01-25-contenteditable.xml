@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2022-01-25T07:49:08.031Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="59lYlkMBbEGk7Yir05zJ" version="16.4.5" type="device">
+  <diagram id="JdNrK27UE7_GpU5LuRIp" name="Page-1">
+    <mxGraphModel dx="870" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Senp7-LAdpGsuFucuyB0-1" value="The quick brown fox jumps over the lazy dog..." style="swimlane;startSize=0;align=left;verticalAlign=top;spacing=0;spacingLeft=20;spacingRight=20;whiteSpace=wrap;labelBackgroundColor=none;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="290" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Senp7-LAdpGsuFucuyB0-2" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAAIAAAABICAQAAACUjDWZAAAAaklEQVR42u3QAQ0AAAgDoL9/aM3hhAg0k9cqQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIE3LWXakgB00R/ngAAAABJRU5ErkJggg==;" vertex="1" parent="Senp7-LAdpGsuFucuyB0-1">
+          <mxGeometry x="20" y="40" width="256" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="Senp7-LAdpGsuFucuyB0-3" value="...and falls!" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;verticalAlign=middle;" edge="1" parent="1" source="Senp7-LAdpGsuFucuyB0-1" target="Senp7-LAdpGsuFucuyB0-1">
+          <mxGeometry x="-0.0909" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="260" />
+              <mxPoint x="400" y="210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Senp7-LAdpGsuFucuyB0-4" value="...and rolls!" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Senp7-LAdpGsuFucuyB0-1" target="Senp7-LAdpGsuFucuyB0-1">
+          <mxGeometry x="-0.1667" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="310" />
+              <mxPoint x="440" y="210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
