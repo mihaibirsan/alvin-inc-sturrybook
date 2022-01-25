@@ -1,0 +1,316 @@
+data:
+  BzzxwsQMhO_IVS2zEPDu-4:
+    description: After three long months of campaigning to be Camden's next Island
+      Representative, both Alvin and Marlo are currently awaiting Isabelle's
+      announcement of the winner.
+    background: http://fpoimg.com/128x72?bg_color=000000&text_color=FFFFFF&text=Cut+to+black
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-2
+  8h6lydNmIUHaWIHyUdoz-2:
+    description: Alright, everyone! The villagers have spoken and the newly elected
+      Island Representative is... Alvin!
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-4
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Isabelle
+    characterName: Isabelle
+  8h6lydNmIUHaWIHyUdoz-4:
+    description: Would you like to say a few words?
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - description: Insult
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-11
+      - description: Humble
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-14
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Isabelle
+    characterName: Isabelle
+  8h6lydNmIUHaWIHyUdoz-11:
+    description: Thank you so much to everyone who came out and voted for me. I
+      would say that I am surprised to have won, but I'm really not. Marlo's
+      campaign lacked a clear vision and it was pretty apparent that he didn't
+      have Camden's best interests at heart. You made the right choice putting
+      your faith in me. I promise that I won't let you down.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - description: Go party
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-23
+      - description: Go to bed
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-25
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-14:
+    description: Thank you so much to everyone who came out to vote. I am honored to
+      have ran against such a talented opponent and I look forward to creating a
+      better life for all of us here on Camden.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - description: Go party
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-28
+      - description: Go to bed
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-31
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-23:
+    description: Thank you so much for throwing this party, Spinkles. You've been
+      such a great campaign manager! / Oh. Thank you, Alvin. We sure did have a
+      lot of fun.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-35
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-25:
+    description: "*Yawn* It's so good to be home."
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-55
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-28:
+    description: Thank you so much for throwing this party, Spinkles. You've been
+      such a great campaign manager! / Oh. Thank you, Alvin. We sure did have a
+      lot of fun.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-44
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-31:
+    description: "*Yawn* It's so good to be home."
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-55
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-35:
+    description: Congratulations on your win, Alvin! It's going to be so much fun to
+      work with you on protecting Camden's native - Chevre biodiversity.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-37
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+A
+    characterName: Villager A
+  8h6lydNmIUHaWIHyUdoz-37:
+    description: Yeah, Alvin! As soon as I saw that Bruce's Construction had
+      sponsored Marlo's campaign, I knew that you were for sure the best choice!
+      - Fang
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-41
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+B
+    characterName: Villager B
+  8h6lydNmIUHaWIHyUdoz-41:
+    description: Well, I for one was not impressed by how rude you were to Marlo.
+      Just 'cause you won doesn't mean you had to be so nasty to him.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - description: Insult
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-69
+      - description: Humble
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-73
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Bam
+    characterName: Bam
+  8h6lydNmIUHaWIHyUdoz-44:
+    description: Congratulations on your win, Alvin! It's going to be so much fun to
+      work with you on protecting Camden's native - Chevre biodiversity.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-47
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+A
+    characterName: Villager A
+  8h6lydNmIUHaWIHyUdoz-47:
+    description: Yeah, Alvin! As soon as I saw that Bruce's Construction had
+      sponsored Marlo's campaign, I knew that you were for sure the best choice!
+      - Fang
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-50
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+B
+    characterName: Villager B
+  8h6lydNmIUHaWIHyUdoz-50:
+    description: Well, I for one was not impressed by how rude you were to Marlo.
+      Just 'cause you won doesn't mean you had to be so nasty to him.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - description: Insult
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-76
+      - description: Humble
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-79
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Bam
+    characterName: Bam
+  8h6lydNmIUHaWIHyUdoz-55:
+    description: Alvin is getting ready for bed
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
+    actions:
+      - description: Insult
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-59
+      - description: Humble
+        targetStateName: 8h6lydNmIUHaWIHyUdoz-63
+  8h6lydNmIUHaWIHyUdoz-59:
+    description: I can't believe Marlo actually thought he had a chance. His
+      campaign was trash and the whole island knows it.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin+Pajamas
+    characterName: Alvin Pajamas
+  8h6lydNmIUHaWIHyUdoz-63:
+    description: It feels incredible that I won. I studied under Marlo for years,
+      I'm honestly surprised that I beat him on my first campaign. He was such a
+      great mentor.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin+Pajamas
+    characterName: Alvin Pajamas
+  8h6lydNmIUHaWIHyUdoz-69:
+    description: I stand by what I said. Marlo ran a bad campaign. Honestly, I'm
+      surprised that he got as many votes as he did. No one wants Camden to be
+      the next big tourist destination. He was never going to win.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-73:
+    description: You know, Bam... You're right. I was a bit harsh on Marlo and I
+      shouldn't have been. He taught me most of what I know and I just threw him
+      under the bus. I hope he doesn't have any hard feelings.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-76:
+    description: I stand by what I said. Marlo ran a bad campaign. Honestly, I'm
+      surprised that he got as many votes as he did. No one wants Camden to be
+      the next big tourist destination. He was never going to win.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-79:
+    description: You know, Bam... You're right. I was a bit harsh on Marlo and I
+      shouldn't have been. He taught me most of what I know and I just threw him
+      under the bus. I hope he doesn't have any hard feelings.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-88:
+    description: It's just like you said. Alvin has been bad-mouthing you all over
+      town. He needs to be taken down.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Marlo's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-92
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Bam
+    characterName: Bam
+  8h6lydNmIUHaWIHyUdoz-90:
+    description: "Bam: No, Marlo. I think Alvin is actually a nice guy. I've been
+      listening in on all of his conversations and he hasn't said anything nasty
+      about you."
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Marlo's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-123
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
+    characterName: Marlo
+  8h6lydNmIUHaWIHyUdoz-92:
+    description: I'm glad that you've started to see things my way. Trust me, Bam,
+      Alvin will pay. They'll all pay.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Marlo's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-106
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
+    characterName: Marlo
+  8h6lydNmIUHaWIHyUdoz-106:
+    description: You wouldn't believe the night that I've had. Alvin stole
+      everything from me. He's a spineless snake and I can't wait to see him
+      squirm.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-110
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
+    characterName: Marlo
+  8h6lydNmIUHaWIHyUdoz-110:
+    description: I knew Alvin couldn't be trusted. To think I used to call him
+      cousin. You know, I always wondered why Tom Nook ended out partnership.
+      I'd bet 100,000 bells that is had something to do with Alvin sticking his
+      nose where it didn't belong.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-114
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
+    characterName: Redd
+  8h6lydNmIUHaWIHyUdoz-114:
+    description: Not Necessary
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-118
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
+    characterName: Redd
+  8h6lydNmIUHaWIHyUdoz-118:
+    description: I don't have time for your whiny sob story. Just give me the weeds.
+      I'll make sure that Alvin gets what's coming to him. They'll all get
+      what's coming to them.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-138
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
+    characterName: Marlo
+  8h6lydNmIUHaWIHyUdoz-123:
+    description: It doesn't matter. I'll still make him pay. I'll make them all pay.
+      They never should have turned their backs on me.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-127
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
+    characterName: Marlo
+  8h6lydNmIUHaWIHyUdoz-127:
+    description: You were right to doubt Alvin's kindness. He's the one responsible
+      for ruining my partnership with Tom Nook. He and I had a real good thing
+      going and Alvin blasted everything to smithereens.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-131
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
+    characterName: Redd
+  8h6lydNmIUHaWIHyUdoz-131:
+    description: Not necessary
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-134
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
+    characterName: Redd
+  8h6lydNmIUHaWIHyUdoz-134:
+    description: I don't need you sob story. Just give me the weeds. I'll make sure
+      that they all get what's coming to them. Alvin won't ever see it coming.
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-138
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
+    characterName: Marlo
+  8h6lydNmIUHaWIHyUdoz-138:
+    description: Morning, Goldie! Thanks for agreeing to meet with me. I'm pretty
+      excited about this new ordinance I've been working on to help enhance
+      Camden's natural beauty. / Oh! And I'd love to hear all about it! Let's
+      get to-
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Goldie's+House
+    actions:
+      - targetStateName: 8h6lydNmIUHaWIHyUdoz-144
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
+    characterName: Alvin
+  8h6lydNmIUHaWIHyUdoz-144:
+    description: Professor Goldie! Professor Goldie you have to see this. Oh. Hi,
+      Alvin. Goldie, you need to see what I found out by the frozen pond. There
+      are these strange weeds the glow. They're everywhere!
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Goldie's+House
+    actions:
+      - targetStateName: BzzxwsQMhO_IVS2zEPDu-1
+    characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Julian
+    characterName: Julian
+  BzzxwsQMhO_IVS2zEPDu-1:
+    description: To be continued
+    background: http://fpoimg.com/128x72?bg_color=000000&text_color=FFFFFF&text=Cut+to+black
+    actions: []
