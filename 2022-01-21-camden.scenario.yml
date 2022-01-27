@@ -125,14 +125,14 @@ data:
     description: Marlo never had a chance. He was too distracted by everything going on with Chai.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
+      - targetStateName: MarlosHouse_AlvinBadMouth
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin+Pajamas
     characterName: Alvin Pajamas
   AlvinsBedtime_T:
     description: I feel bad about everything that happened between him and Chai. It probably messed with his head.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
+      - targetStateName: MarlosHouse_AlvinNiceGuy
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin+Pajamas
     characterName: Alvin Pajamas
 
@@ -142,106 +142,96 @@ data:
       surprised that he got as many votes as he did.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
+      - targetStateName: MarlosHouse_AlvinBadMouth
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
   PartyAtSprinkles_W3_T:
     description: I didn't mean to be so rude. Marlo really cares about Camden. I think he's just a little misguided.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
+      - targetStateName: MarlosHouse_AlvinBadMouth
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
   PartyAtSprinkles_T3_W:
     description: Marlo's been the Island Representative for too long. He got arrogant and it cost him the election.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
+      - targetStateName: MarlosHouse_AlvinNiceGuy
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
   PartyAtSprinkles_T3_T:
     description: You're right. I shouldn't have said what I did. Marlo's a good guy and I'm grateful for everything he's taught me.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
+      - targetStateName: MarlosHouse_AlvinNiceGuy
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
 
 # Act 3 and Act 4
-  8h6lydNmIUHaWIHyUdoz-88:
+  MarlosHouse_AlvinBadMouth:
     description: It's just like you said, boss. Alvin has been bad-mouthing you all over
       town. He deserves what's coming to him.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Marlo's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-92
+      - targetStateName: MarlosHouse_AlvinBadMouth_2
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Bam
     characterName: Bam
-  8h6lydNmIUHaWIHyUdoz-90:
+  MarlosHouse_AlvinNiceGuy:
     description: I think Alvin is actually a pretty nice guy. I've been
       listening in on all of his conversations and he hasn't said anything nasty
       about you.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Marlo's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-123
+      - targetStateName: MarlosHouse_AlvinNiceGuy_2
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
     characterName: Bam
-  8h6lydNmIUHaWIHyUdoz-92:
+  MarlosHouse_AlvinBadMouth_2:
     description: I knew it! He wins one election and it goes straight to his head. He has no idea what he's doing.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Marlo's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-106
+      - targetStateName: SecretBeach_AlvinBadMouth
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
     characterName: Marlo
-  8h6lydNmIUHaWIHyUdoz-106:
+  SecretBeach_AlvinBadMouth:
     description: Redd, you wouldn't believe the night I've had. I lost to Alvin. ALVIN! I taught the boy everything he knew!
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-110
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
     characterName: Marlo
-  8h6lydNmIUHaWIHyUdoz-110:
+  SecretBeach_AlvinBadMouth_2:
     description: I told you Alvin was sneaky. But did you listen to your cousin Redd? No. No you didn't.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-114
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
     characterName: Redd
-  8h6lydNmIUHaWIHyUdoz-114:
+  SecretBeach_AlvinBadMouth_3:
     description: I'm really not in the mood for this right now. Let's just cut to the chase. Did you bring what we had discussed?
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-118
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
     characterName: Marlo
-  8h6lydNmIUHaWIHyUdoz-118:
+  SecretBeach_AlvinBadMouth_4:
     description: Oh yeah. I got it alright. I got a lot of it. Alvin doesn't have a clue what he got himself into. He'll regret he ever won.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
     actions:
       - targetStateName: GoldiesHouse_1
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
     characterName: Redd
-  8h6lydNmIUHaWIHyUdoz-123:
+  MarlosHouse_AlvinNiceGuy_2:
     description: It's doesn't matter. I may have taught that kid everything he knows. But I still have a few tricks up my sleeves.
-    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
+    background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Marlo's+House
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-127
+      - targetStateName: SecretBeach_AlvinNiceGuy
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
     characterName: Marlo
-  8h6lydNmIUHaWIHyUdoz-127:
+  SecretBeach_AlvinNiceGuy:
     description: Redd, it was so embarrassing. How could I have lost to Alvin? ALVIN!?
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-131
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
     characterName: Marlo
-  8h6lydNmIUHaWIHyUdoz-131:
+  SecretBeach_AlvinNiceGuy_2:
     description: Cousin Redd told you. I told you not to underestimate the boy and what did you do? You underestimated him.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-134
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Redd
     characterName: Redd
-  8h6lydNmIUHaWIHyUdoz-134:
+  SecretBeach_AlvinNiceGuy_3:
     description: Yeah, well... He's still in way over his head. You have what we talked about on the phone?
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
     actions:
