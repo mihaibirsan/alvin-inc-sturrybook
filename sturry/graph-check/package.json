@@ -1,0 +1,14 @@
+{
+  "name": "953a6045eb54f635",
+  "main": "953a6045eb54f635@139.js",
+  "version": "139.0.0",
+  "homepage": "https://observablehq.com/d/953a6045eb54f635",
+  "author": {
+    "name": "Mihai Bîrsan",
+    "url": "https://observablehq.com/@mihaibirsan"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
