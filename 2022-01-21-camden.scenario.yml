@@ -1,149 +1,143 @@
 data:
 # Act 1
-  Before Election Results:
+  BeforeElectionResults:
     description: Isabelle is about to announce the winner of Camden's newest election for the next Island Representative.
     background: http://fpoimg.com/128x72?bg_color=000000&text_color=FFFFFF&text=Cut+to+black
-    actions:
-      - targetStateName: Isabelle Announcement
-# Act 2
-  Isabelle Announcement:
+  IsabelleAnnouncement_1:
     description: Alright, everyone! The villagers have spoken and the newly elected
       Island Representative is... Alvin!
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-4
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Isabelle
     characterName: Isabelle
-  8h6lydNmIUHaWIHyUdoz-4:
+  IsabelleAnnouncement_2:
     description: Would you like to say a few words?
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
     actions:
       - description: I knew I would win...
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-11
+        targetStateName: AnnouncementAlvinWinning
       - description: Thank you so much!
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-14
+        targetStateName: AnnouncementAlvinThanking
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Isabelle
     characterName: Isabelle
-  8h6lydNmIUHaWIHyUdoz-11:
+  AnnouncementAlvinWinning:
     description: I'd say that I'm surprised, but I'm not. Marlo's out of touch with what the villagers want. This serves him right.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
     actions:
       - description: Let's party!
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-23
+        targetStateName: AnnouncementAlvinWinningPartyTime
       - description: I need a good night's sleep.
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-25
+        targetStateName: AnnouncementAlvinWinningBedTime
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-14:
+  AnnouncementAlvinThanking:
     description: I stand by my promise to make Camden the most eco-friendly island that it can be. Thanks for believing in me!
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
     actions:
       - description: It's time to party!
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-28
+        targetStateName: AnnouncementAlvinThankingPartyTime
       - description: Now, I'm off to bed.
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-31
+        targetStateName: AnnouncementAlvinThankingBedTime
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-# Act 3
-  8h6lydNmIUHaWIHyUdoz-23:
+  AnnouncementAlvinWinningPartyTime:
     description: Now, let's celebrate! My campaign manager, Sprinkles, is hosting a party at her house. I hope to see you there!
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-35
+      - targetStateName: PartyAtSprinkles_W1
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-25:
+  AnnouncementAlvinWinningBedTime:
     description: Again, thank you so much! I'm thrilled to start working tomorrow and I'd like to be well rested. Take care!
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-55
+      - targetStateName: AlvinsBedtime
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-28:
+  AnnouncementAlvinThankingPartyTime:
     description: Come join me and my awesome campaign mananger, Sprinkles, at her place to celebrate. It's gonna be wild!
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-44
+      - targetStateName: PartyAtSprinkles_T1
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-31:
+  AnnouncementAlvinThankingBedTime:
     description: This means the world to me! I'll be cherishing this moment as I crawl into bed tonight. Thank you and take care!
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Resident+Services
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-55
+      - targetStateName: AlvinsBedtime
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-35:
+
+# Act 2, Row Winning
+  PartyAtSprinkles_W1:
     description: Congratulations! I'm so glad that you won.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-37
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+A
     characterName: Chevre
-  8h6lydNmIUHaWIHyUdoz-37:
+  PartyAtSprinkles_W2:
     description: Yeah. As soon as I saw that B&B Construction had backed Marlo's campaign, I just knew that you had to win.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-41
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+B
     characterName: Fang
-  8h6lydNmIUHaWIHyUdoz-41:
+  PartyAtSprinkles_W3:
     description: Sure. But did you need to be so rude? My brother and Marlo worked hard on their plans for the island.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
       - description: Their plans sucked...
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-69
+        targetStateName: PartyAtSprinkles_W3_W
       - description: Perhaps I was a bit harsh...
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-73
+        targetStateName: PartyAtSprinkles_W3_T
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Bam
     characterName: Bam
-  8h6lydNmIUHaWIHyUdoz-44:
+
+# Act 2, Row Thanking
+  PartyAtSprinkles_T1:
     description: I'm so happy for you, Alvin! You absolutely deserved to win.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-47
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+A
     characterName: Chevre
-  8h6lydNmIUHaWIHyUdoz-47:
+  PartyAtSprinkles_T2:
     description: Yeah, buddy. Way to go! I knew you had it in you.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
-    actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-50
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Villager+B
     characterName: Fang
-  8h6lydNmIUHaWIHyUdoz-50:
+  PartyAtSprinkles_T3:
     description: Well, I'm not impressed by how awful you were to Marlo in your speech. You didn't need to be that harsh.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
       - description: But it's the truth...
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-76
+        targetStateName: PartyAtSprinkles_T3_W
       - description: Yeah, maybe I was a bit mean...
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-79
+        targetStateName: PartyAtSprinkles_T3_T
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Bam
     characterName: Bam
-  8h6lydNmIUHaWIHyUdoz-55:
+
+# Act 2, Row Bedtime
+  AlvinsBedtime:
     description: Today was such a great day.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
     actions:
       - description: I'm glad that I defeated Marlo...
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-59
+        targetStateName: AlvinsBedtime_W
       - description: I'm glad that I gave it my all...
-        targetStateName: 8h6lydNmIUHaWIHyUdoz-63
-  8h6lydNmIUHaWIHyUdoz-59:
+        targetStateName: AlvinsBedtime_T
+  AlvinsBedtime_W:
     description: Marlo never had a chance. He was too distracted by everything going on with Chai.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
     actions:
       - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin+Pajamas
     characterName: Alvin Pajamas
-  8h6lydNmIUHaWIHyUdoz-63:
+  AlvinsBedtime_T:
     description: I feel bad about everything that happened between him and Chai. It probably messed with his head.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Alvin's+Bedroom
     actions:
       - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin+Pajamas
     characterName: Alvin Pajamas
-  8h6lydNmIUHaWIHyUdoz-69:
+
+# Act 3, Party continuation
+  PartyAtSprinkles_W3_W:
     description: I stand by what I said. Marlo ran a bad campaign. Honestly, I'm
       surprised that he got as many votes as he did.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
@@ -151,27 +145,29 @@ data:
       - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-73:
+  PartyAtSprinkles_W3_T:
     description: I didn't mean to be so rude. Marlo really cares about Camden. I think he's just a little misguided.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
       - targetStateName: 8h6lydNmIUHaWIHyUdoz-88
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-76:
+  PartyAtSprinkles_T3_W:
     description: Marlo's been the Island Representative for too long. He got arrogant and it cost him the election.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
       - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
-  8h6lydNmIUHaWIHyUdoz-79:
+  PartyAtSprinkles_T3_T:
     description: You're right. I shouldn't have said what I did. Marlo's a good guy and I'm grateful for everything he's taught me.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Campaign+Manager's+House
     actions:
       - targetStateName: 8h6lydNmIUHaWIHyUdoz-90
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Alvin
     characterName: Alvin
+
+# Act 3 and Act 4
   8h6lydNmIUHaWIHyUdoz-88:
     description: It's just like you said, boss. Alvin has been bad-mouthing you all over
       town. He deserves what's coming to him.
@@ -221,7 +217,7 @@ data:
     description: Oh yeah. I got it alright. I got a lot of it. Alvin doesn't have a clue what he got himself into. He'll regret he ever won.
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-138
+      - targetStateName: GoldiesHouse_1
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
     characterName: Redd
   8h6lydNmIUHaWIHyUdoz-123:
@@ -249,10 +245,12 @@ data:
     description: Yeah, well... He's still in way over his head. You have what we talked about on the phone?
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Secret+Beach
     actions:
-      - targetStateName: 8h6lydNmIUHaWIHyUdoz-138
+      - targetStateName: GoldiesHouse_1
     characterImage: http://fpoimg.com/50x100?bg_color=FFFABC&text_color=C3BAB0&text=Marlo
     characterName: Marlo
-  8h6lydNmIUHaWIHyUdoz-138:
+
+# Act 5: Goldie's House
+  GoldiesHouse_1:
     description: Mornin' Goldie! Thanks for agreeing to meet with me today. I'd really like your help with these new ordinances I've —
     background: http://fpoimg.com/128x72?bg_color=E6F3FF&text_color=B0BAC3&text=Goldie's+House
     actions:
