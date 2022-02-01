@@ -1,27 +1,27 @@
 data:
 # Act 1
   BeforeElectionResults:
-    description: Isabelle is about to announce the winner of Camden's newest election for the next Island Representative.
     background: Black screen
+    description: Isabelle is about to announce the winner of Camden's newest election for the next Island Representative.
   IsabelleAnnouncement:
+    background: Resident Services
     description:
       - Isabelle: Alright, everyone! The villagers have spoken and the newly elected
           Island Representative is... Alvin!
       - Isabelle: Would you like to say a few words?
-    background: Resident Services
     actions:
-      - AnnouncementAlvinWinning: I knew I would win...
-      - AnnouncementAlvinThanking: Thank you so much!
+      - AnnouncementAlvinWinning: Be confident
+      - AnnouncementAlvinThanking: Be grateful
   AnnouncementAlvinWinning:
     Alvin: I'd say that I'm surprised, but I'm not. Marlo's out of touch with what the villagers want. This serves him right.
     actions:
-      - AnnouncementAlvinWinningPartyTime: Let's party!
-      - AnnouncementAlvinWinningBedTime: I need a good night's sleep.
+      - AnnouncementAlvinWinningPartyTime: Invite to party
+      - AnnouncementAlvinWinningBedTime: Retreat to bed
   AnnouncementAlvinThanking:
     Alvin: I stand by my promise to make Camden the most eco-friendly island that it can be. Thanks for believing in me!
     actions:
-      - AnnouncementAlvinThankingPartyTime: It's time to party!
-      - AnnouncementAlvinThankingBedTime: Now, I'm off to bed.
+      - AnnouncementAlvinThankingPartyTime: Invite to party
+      - AnnouncementAlvinThankingBedTime: Retreat to bed
 
   AnnouncementAlvinWinningPartyTime:
     Alvin: Now, let's celebrate! My campaign manager, Sprinkles, is hosting a party at her house. I hope to see you there!
@@ -48,8 +48,8 @@ data:
       - Bam: Sure. But did you need to be so rude? My brother and Marlo worked hard on their plans for the island.
     background: Campaign Manager's House
     actions:
-      - PartyAtSprinkles_W3_W: Their plans sucked...
-      - PartyAtSprinkles_W3_T: Perhaps I was a bit harsh...
+      - PartyAtSprinkles_W3_W: Be indignant
+      - PartyAtSprinkles_W3_T: Be apologetic
   PartyAtSprinkles_W3_W:
     Alvin: I stand by what I said. Marlo ran a bad campaign. Honestly, I'm surprised that he got as many votes as he did.
     actions:
@@ -64,10 +64,11 @@ data:
     description:
       - Chevre: I'm so happy for you, Alvin! You absolutely deserved to win.
       - Fang: Yeah, buddy. Way to go! I knew you had it in you.
+      # TODO: This needs slight rework because in this timeline Alvin never said anything "awful" or "harsh"
       - Bam: Well, I'm not impressed by how awful you were to Marlo in your speech. You didn't need to be that harsh.
     actions:
-      - PartyAtSprinkles_T3_W: But it's the truth...
-      - PartyAtSprinkles_T3_T: Yeah, maybe I was a bit mean...
+      - PartyAtSprinkles_T3_W: Be surprised
+      - PartyAtSprinkles_T3_T: Be curious
   PartyAtSprinkles_T3_W:
     Alvin: Marlo's been the Island Representative for too long. He got arrogant and it cost him the election.
     actions:
@@ -82,32 +83,29 @@ data:
     AlvinPajamas: Today was such a great day.
     background: Alvin's Bedroom
     actions:
-      - AlvinsBedtime_W: I'm glad that I defeated Marlo...
-      - AlvinsBedtime_T: I'm glad that I gave it my all...
+      - AlvinsBedtime_W: Be grateful for the win
+      - AlvinsBedtime_T: Be grateful for the effort
   AlvinsBedtime_W:
-    AlvinPajamas: Marlo never had a chance. He was too distracted by everything going on with Chai.
+    AlvinPajamas: I'm glad that I defeated Marlo... Marlo never had a chance. He was too distracted by everything going on with Chai.
     actions:
       - MarlosHouse_AlvinBadMouth
   AlvinsBedtime_T:
-    AlvinPajamas: I feel bad about everything that happened between him and Chai. It probably messed with his head.
+    AlvinPajamas: I'm glad that I gave it my all... I feel bad about everything that happened between him and Chai. It probably messed with his head.
     actions:
       - MarlosHouse_AlvinNiceGuy
 
 # Act 3: Marlo's House
   MarlosHouse_AlvinBadMouth:
-    description:
-      - Bam: It's just like you said, boss. Alvin has been bad-mouthing you all over
-          town. He deserves what's coming to him.
-      - Marlo: I knew it! He wins one election and it goes straight to his head. He has no idea what he's doing.
     background: Marlo's House
+    description:
+      - Bam: It's just like you said, boss. Alvin has been bad-mouthing you all over town. He deserves what's coming to him.
+      - Marlo: I knew it! He wins one election and it goes straight to his head. He has no idea what he's doing.
     actions:
       - SecretBeach_AlvinBadMouth
 
   MarlosHouse_AlvinNiceGuy:
     description:
-      - Bam: I think Alvin is actually a pretty nice guy. I've been
-          listening in on all of his conversations and he hasn't said anything nasty
-          about you.
+      - Bam: I think Alvin is actually a pretty nice guy. I've been listening in on all of his conversations and he hasn't said anything nasty about you.
       - Marlo: It's doesn't matter. I may have taught that kid everything he knows. But I still have a few tricks up my sleeves.
     actions:
       - SecretBeach_AlvinNiceGuy
@@ -140,8 +138,8 @@ data:
       - Alvin: Mornin' Goldie! Thanks for agreeing to meet with me today. I'd really like your help with these new ordinances I've —
       - Julian: Professor Goldie! Oh... Hey, Alvin. Sorry to barge in but it's urgent! There are strange glowing weeds everywhere!
     actions:
-      - GoldiesHouse_CheckOutPlant: Find out more...
-      - GoldiesHouse_BrushJulianOff: Brush Julian off...
+      - GoldiesHouse_CheckOutPlant: Find out more
+      - GoldiesHouse_BrushJulianOff: Brush Julian off
 
   GoldiesHouse_CheckOutPlant:
     description:
@@ -159,8 +157,8 @@ data:
       - Julian: This isn't island gossip - though I did just find out the juciest bit of news about Bam and Marlo.
       - Goldie: If you're really concerned about it, I'd be happy to go take a look. Would you mind, Alvin?
     actions:
-      - GoldiesHouse_BrushJulianOff_ItsNothing: Assure Goldie it's nothing...
-      - GoldiesHouse_BrushJulianOff_MaybeSomething: Offer to reschedule...
+      - GoldiesHouse_BrushJulianOff_ItsNothing: Assure Goldie it's nothing
+      - GoldiesHouse_BrushJulianOff_MaybeSomething: Offer to reschedule
 
   GoldiesHouse_BrushJulianOff_ItsNothing:
     description:
@@ -210,8 +208,8 @@ data:
       - Alvin: Like what?
       - Goldie: They were both wearing gloves and carrying big bags that appeared to be glowing. I think you should check it out.
     actions:
-      - ChaisBakery_LabSampled_GoToShop: Agree to go to the shop...
-      - ChaisBakery_LabSampled_MuffinTime: Stay and have a muffin...
+      - ChaisBakery_LabSampled_GoToShop: Agree to go to the shop
+      - ChaisBakery_LabSampled_MuffinTime: Stay and have a muffin
   ChaisBakery_LabSampled_GoToShop:
     Alvin: Okay. I'm headed there now. Sorry, Chai. Bruce. But I have to go check on something. I'll catch you both later.
     actions:
@@ -231,8 +229,8 @@ data:
       - Chai: That's so sweet of him.
       - Bruce: Hey, Alvin. You want one? It'd be my treat.
     actions:
-      - ChaisBakery_ItsNothing_OrderAndLeave: Order a coffee and leave...
-      - ChaisBakery_ItsNothing_MuffinTime: Stay and try a muffin...
+      - ChaisBakery_ItsNothing_OrderAndLeave: Order a coffee and leave
+      - ChaisBakery_ItsNothing_MuffinTime: Stay and try a muffin
   ChaisBakery_ItsNothing_OrderAndLeave:
     Alvin: Thanks, but I should probably get going. There's something I want to check on out by the pond. Just a coffee, please.
     actions:
@@ -254,8 +252,8 @@ data:
       - Alvin: Oh! Excuse me. Goldie's calling. Hello!
       - Goldie: Alvin! Help! Alvin! Tim.. Tom.. Cranny.. Hu-hurry!
     actions:
-      - ChaisBakery_MaybeSomething_GoToShop: Go to Nook's Cranny...
-      - ChaisBakery_MaybeSomething_MuffinTime: Stay and try a muffin...
+      - ChaisBakery_MaybeSomething_GoToShop: Go to Nook's Cranny
+      - ChaisBakery_MaybeSomething_MuffinTime: Stay and try a muffin
   ChaisBakery_MaybeSomething_GoToShop:
     Alvin: Sorry, Chai. Bruce. But I have to go. Something important has come up. I'll catch up with you both later.
     actions:
@@ -269,7 +267,7 @@ data:
     description:
       - Alvin: Chai, this muffin is amazing! Easily your best recipe yet!
       - Bruce: Mhm. Yeah. They're great. Say, tell me Alvin... How do you feel?
-      - Alvin: Uh. Well, I feel great. A little sleepy... I could... I could use a... A nap..
+      - Alvin: Uh. Well, I feel great. A little sleepy... I could... I could use a... A nap...
   LunaDreamImage_YummyInMyTummy:
     background: Luna Dream Image
     description:
@@ -297,7 +295,7 @@ data:
       - Timmy: Pst.. Take this...
       - Alvin: It's a note. It says 'Marlo' and 'mountain'. Okay. But, what does that mean?
     actions:
-      - ChristmasTreeCourtyard_Option_1: Head to the Festive Plaza...
+      - ChristmasTreeCourtyard_Option_1: Head to the mountain
 
   NooksCranny_Option_5:
     description:
@@ -312,10 +310,13 @@ data:
       - Timmy: Pst... Take this...
       - Alvin: It's a note. It says 'Goldie safe' and ' Marlo mountain'. But... What does that mean?
     actions:
-      - ChristmasTreeCourtyard_Option_4: Head to the Festive Plaza...
+      - ChristmasTreeCourtyard_Option_4: Head to the mountain
 
 # Act 9: Christmas Tree Courtyard
   ChristmasTreeCourtyard_Option_1:
+    background: Black screen
+    description: On your way to the mountain, you run into Bam by the Festive Plaza.
+  ChristmasTreeCourtyard_Option_1_cont:
     background: Christmas Tree Courtyard
     description:
       - Alvin: Bam! Hey! How's it going? Did you donate all of these gifts for the holiday gift exchange?
@@ -326,11 +327,15 @@ data:
       - Bam: Mind your own business then, FRIEND!
       - Alvin: Bam! No, wait! Why... Why did you run off?
     actions:
-      - Mountain_Option_1: Continue on to the Mountain...
-      - Lake_Option_2: Follow Bam...
-      - ChristmasTreeCourtyard_Option_2: Investigate the boxes...
+      - Mountain_Option_1: Continue to the mountain
+      - Lake_Option_2: Follow Bam
+      - ChristmasTreeCourtyard_Option_2: Investigate the boxes
 
   ChristmasTreeCourtyard_Option_3:
+    background: Black screen
+    description: On your way to the pond, you run into Bam by the Festive Plaza.
+  ChristmasTreeCourtyard_Option_3_cont:
+    background: Christmas Tree Courtyard
     description:
       - Alvin: Holy cow! Bam, did you donate all of these presents to the Camden gift exchange?
       - Bam: Wha-What? Oh... Alvin. Yeah. I, uh, I'm just doing my best to spread a little holiday cheer.
@@ -340,10 +345,14 @@ data:
       - Bam: Just mind your own business!
       - Alvin: Hey! Wait! Where are you going? You don't need to run off.
     actions:
-      - ChristmasTreeCourtyard_Option_2: Investigate the boxes...
-      - Lake_Option_3: Follow Bam...
+      - ChristmasTreeCourtyard_Option_2: Investigate the boxes
+      - Lake_Option_3: Follow Bam
 
   ChristmasTreeCourtyard_Option_4:
+    background: Black screen
+    description: On your way to the mountain, you run into Bam by the Festive Plaza.
+  ChristmasTreeCourtyard_Option_4_cont:
+    background: Christmas Tree Courtyard
     description:
       - Alvin: Oh. Hey, Bam! Are you dropping off all of those presents for the gift exchange?
       - Bam: Yeah. What of it?
@@ -353,9 +362,9 @@ data:
       - Bam: Buzz off, man! Nothing's going on so you should just keep your nose out of everyone else's business.
       - Alvin: Bam, wait! Why are you... Why are you running away?
     actions:
-      - Lake_Option_6: Follow Bam...
-      - ChristmasTreeCourtyard_Option_2: Investigate the boxes...
-      - Mountain_Option_7: Continue to the Mountain...
+      - Mountain_Option_7: Continue to the mountain
+      - Lake_Option_6: Follow Bam
+      - ChristmasTreeCourtyard_Option_2: Investigate the boxes
 
   ChristmasTreeCourtyard_Option_2:
     description:
@@ -387,8 +396,8 @@ data:
       - Alvin: You can't just go around manipulating people, Marlo. It's wrong and you know it.
       - Marlo: You winning the election was wrong! Look, Alvin, either you step down and leave the island willingly, or I'll make you.
     actions:
-      - Mountain_Option_1_Fight: I'll never let you win...
-      - Mountain_Option_1_Flight: Fine. You win...
+      - Mountain_Option_1_Fight: Stand up to Marlo
+      - Mountain_Option_1_Flight: Step down for the villagers' sake
   Mountain_Option_1_Fight:
     description:
       - Alvin: I'll never let you win, Marlo. Not like this.
@@ -412,8 +421,8 @@ data:
       - Alvin: But I won the election fair and square. You can't just go around manipulating people into giving you what you want.
       - Marlo: I always get what I want in the end. One way, or another. So what's it gonna be? The hard way or the easy way?
     actions:
-      - Mountain_Option_7_Fight: I'll never let you win...
-      - Mountain_Option_7_Flight: Fine. You win...
+      - Mountain_Option_7_Fight: Stand up to Marlo
+      - Mountain_Option_7_Flight: Step down for the villagers' sake
   Mountain_Option_7_Fight:
     description:
       - Alvin: I'll never let you win this way!
@@ -456,8 +465,8 @@ data:
       - Bruce: Of course it's about the election. Marlo and me had a plan. We were going to get rich while bringing Camden into the 21st century.
       - Bam: If you don't step down and get lost, we'll dump these weeds into the island's drinking water and then Marlo will turn everyone against you!
     actions:
-      - Lake_Option_2_Flight: Fine, I'll step down...
-      - Lake_Option_2_Fight: I'll never let you win...
+      - Lake_Option_2_Flight: Step down for the villagers' sake
+      - Lake_Option_2_Fight: Stand up to Marlo
   Lake_Option_2_Flight:
     Alvin: Alright! Fine. If you guys are willing to go to such extremes as to harm other people... Fine. I'll step down. Just stop. Please.
     actions:
@@ -479,8 +488,8 @@ data:
       - Bruce: Once these weeds mix with Camden's drinking water, Marlo will have the whole island under his control. He'll turn everyone against you!
       - Bam: Unless you agree, right here and now, to step down as Island Representative. The choice is yours, Alvin. What's it gonna be?
     actions:
-      - Lake_Option_3_Flight: Fine, I'll step down...
-      - Lake_Option_3_Fight: I won't let you win...
+      - Lake_Option_3_Flight: Step down for the villagers' sake
+      - Lake_Option_3_Fight: Stand up to Marlo
   Lake_Option_3_Flight:
     Alvin: Fine! Alright. There's no reason to hurt anyone. I'll... I'll step down.
     actions:
@@ -501,8 +510,8 @@ data:
       - Bam: Once we mix these weeds with the island's drinking water, then Marlo will have everyone under his control. Everyone will turn against you!
       - Bruce: The only way we'll stop is if you agree to resign. The choice is yours, Alvin. Think quickly or else our hands might just slip.
     actions:
-      - Lake_Option_6_Flight: Fine. I'll step down...
-      - Lake_Option_6_Fight: I won't let you win...
+      - Lake_Option_6_Flight: Step down for the villagers' sake
+      - Lake_Option_6_Fight: Stand up to Marlo
   Lake_Option_6_Flight:
     Alvin: Okay, okay. I'll resign. Please, don't hurt anyone and let Goldie go. She has nothing to do with this.
     actions:
