@@ -51,8 +51,7 @@ data:
       - PartyAtSprinkles_W3_W: Their plans sucked...
       - PartyAtSprinkles_W3_T: Perhaps I was a bit harsh...
   PartyAtSprinkles_W3_W:
-    Alvin: I stand by what I said. Marlo ran a bad campaign. Honestly, I'm
-      surprised that he got as many votes as he did.
+    Alvin: I stand by what I said. Marlo ran a bad campaign. Honestly, I'm surprised that he got as many votes as he did.
     actions:
       - MarlosHouse_AlvinBadMouth
   PartyAtSprinkles_W3_T:
@@ -129,6 +128,7 @@ data:
       - Marlo: Redd, it was so embarrassing. How could I have lost to Alvin? ALVIN!?
       - Redd: Cousin Redd told you. I told you not to underestimate the boy and what did you do? You underestimated him.
       - Marlo: Yeah, well... He's still in way over his head. You have what we talked about on the phone?
+      - Redd: Oh, I got it alright. Lots of it. Alvin won't have a clue what to do. 
     actions:
       - GoldiesHouse
 
@@ -136,31 +136,46 @@ data:
   GoldiesHouse:
     background: Goldie's House
     description:
+      - Goldie: Alvin, welcome! It's so nice to see you and so early, too. 
       - Alvin: Mornin' Goldie! Thanks for agreeing to meet with me today. I'd really like your help with these new ordinances I've —
       - Julian: Professor Goldie! Oh... Hey, Alvin. Sorry to barge in but it's urgent! There are strange glowing weeds everywhere!
     actions:
-      - GoldiesHouse_CheckOutPlant: Check out the new plant
-      - GoldiesHouse_BrushJulianOff: Brush Julian off
+      - GoldiesHouse_CheckOutPlant: Find out more... 
+      - GoldiesHouse_BrushJulianOff: Brush Julian off...
 
   GoldiesHouse_CheckOutPlant:
-    Alvin: <OK, let's go!>
+      - Alvin: What do you mean? 
+      - Julian: Exactly what I said. Strange. Glowing. Weeds. Out by the frozen pond. They're everywhere!
+      - Goldie: We'd better go have a look. 
+      - Julian: Yeah, about that... You see, Nook's is having a sale at the moment so...
+      - Alvin: No worries. I'll head over there with you, Goldie.  
     actions:
       - FrozenPond
 
   GoldiesHouse_BrushJulianOff:
     description:
-      - Alvin: <What sort of gossip is this?>
-      - Julian: <You really should take me seriously, Alvin!>
-      - Goldie: <Now, now, Julian... I'm willing to take a look!>
+      - Alvin: Isn't it a little early for island gossip, Julian? 
+      - Julian: This isn't island gossip - though I did just find out the juciest bit of news about Bam and Marlo.  
+      - Goldie: If you're really concerned about it, I'd be happy to go take a look. Would you mind, Alvin? 
     actions:
-      - GoldiesHouse_BrushJulianOff_ItsNothing: Assure Goldie it's nothing
-      - GoldiesHouse_BrushJulianOff_MaybeSomething: Suggest Goldie might check it out
+      - GoldiesHouse_BrushJulianOff_ItsNothing: Assure Goldie it's nothing...
+      - GoldiesHouse_BrushJulianOff_MaybeSomething: Offer to reschedule... 
   GoldiesHouse_BrushJulianOff_ItsNothing:
-    Alvin: <It's probably nothing, Goldie. Just more of Julian's gossip. I'll be on my way to my next appointment.>
+      - Alvin: It's most likely nothing. Just more of Julian's usual gossip.
+      - Julian: I swear it's not!
+      - Goldie: Alvin, let's go ahead and reschedule. I'd like to head out to the pond just to confirm that it's nothing.
+      - Alvin: Fine. Guess I'll just swing by Chai's for a coffee. Shoot me a call when you're finished.  
+      - Julian: I'd go with you. Honest, I would. But, Nook's got a big sale going on right now so...
+      - Goldie: Not a problem. I'm sure I can manage on my own. 
+      -  Alvin: Take care. 
     actions:
       - ChaisBakery_ItsNothing
   GoldiesHouse_BrushJulianOff_MaybeSomething:
-    Alvin: <Maybe there is something to it. But I must be on my way to the bakery anyway.>
+      - Alvin: Not at all. If you really think you should go, then let's just reschedule our meeting. 
+      - Goldie: Alright. How about I call you after I've secured a sample? 
+      - Alvin: Sounds great. I'll just be at Chai's Bakery. I could really go for another coffee. 
+      - Julian: I'd love to head out there with you, Goldie, but Nook's is having a pretty big sale so...
+      - Goldie: That's quite alright. I can manage getting to the frozen pond on my own. 
     actions:
       - ChaisBakery_MaybeSomething
 
@@ -168,277 +183,367 @@ data:
   FrozenPond:
     background: Frozen Pond
     description:
-      - Julian: <Whoop! There it is!>
-      - Goldie: <Something doesn't look right about the plant. Good thing I've got my gloves!>
-      - Goldie: <I'll take this back to my lab to study.>
-      - Alvin: <Alright! My next meeting's at Chai's bakery over coffee.>
+      - Goldie: I think Julian was on to something. These weeds aren't native to Camden. 
+      - Alvin: Where do you think they came from? 
+      - Goldie: I'm not sure, but I'll take a sample back to the lab. We may need to reschedule our meeting. 
+      - Alvin: Of course. I'll head over to Chai's for a quick coffee. Let me know if your find anything? 
+      - Goldie: I will. Say hi to Chai for me. 
     actions:
       - ChaisBakery_LabSampled
 
 # Act 7: Chai's Bakery
   ChaisBakery_LabSampled:
     background: Chai's Bakery
-    description: TODO
-    # Ask Chai how she has been since the break-up.
-    # She says that her and Marlo have been trying to work things out.
-    # She mentions that he shared with her an exciting new ingredient for her muffins.
-    # Bruce pops up saying that Bam has really loved the new recipe.
-    # Goldie calls and says that she still doesn't know much about the weeds, and says that her flora encyclopedia doesn't mention them.
-    # She also mentions that she saw Timmy and Tommy sneaking back to the shop wearing gloves and masks while carrying a big bag.
-    # She encourages Alvin to check it out. 
+    description:
+      - Alvin: Mornin', Chai! How are you doing today? Oh! And Goldies says 'hi'! 
+      - Chai: Typical sweet Goldie. I've been great! Marlo and I have been working things out. 
+      - Alvin: That's awesome! I'm so happy for you. 
+      - Chai: Thanks. I'm happy, too. This morning he even shared a new ingredient for my signature muffins! 
+      - Bruce: Yeah, Bam's been yacking my ear off about how good the new recipe is. Mornin', Alvin. Chai.  
+      - Alvin: Oh! Excuse me. Goldie's calling me. Hello! 
+      - Goldie: Hey, Alvin. I'm still running tests, but on my way back to the lab I noticed something odd about Timmy and Tommy. 
+      - Alvin: Like what?  
+      -Goldie: They were both wearing gloves and carrying big bags that appeared to be glowing. I think you should check it out. 
     actions:
-      - NooksCranny_Option_1: Visit the Shop
-      - ChaisBakery_YummyInMyTummy: Stay at the bakery and have a muffin.
+      - NooksCranny_Option_1: Agree to go to the shop...
+      - Alvin: Okay. I'm headed there now. Sorry, Chai. Bruce. But I have to go check on something. I'll catch you both later. 
+      - ChaisBakery_YummyInMyTummy: Stay and have a muffin...
+      - Alvin: Okay. I'll just grab a muffin real quick and then head over. Thanks for letting me know.
 
   ChaisBakery_ItsNothing:
-    description: TODO
-    # Ask Chai how she has been since the break-up.
-    # She says that her and Marlo have been trying to work things out.
-    # She mentions that he shared with her an exciting new ingredient for her muffins.
-    # Bruce pops up saying that Bam has really loved the new recipe. 
+    description: 
+      - Alvin: Mornin', Chai! It's nice to see you smiling again. Got some good news to share? 
+      - Chai: Hey, Alvin. Uh, yeah. Marlo and I have been working through some things and it's going well. 
+      - Alvin: That's so cool! I'm glad that you two are trying to making things work. 
+      - Chai: Yeah, this morning he even gifted me a new ingredient for my signature muffins. 
+      - Bruce: Mornin' you two. Bam's been raving about the new recipe all morning. Says they're your best muffins yet.
+      - Chai: That's so sweet of him. 
+      - Bruce: Hey, Alvin. You want one? It'd be my treat.  
     actions:
-      - ChristmasTreeCourtyard_Option_3: Order coffee and leave.
-      - ChaisBakery_YummyInMyTummy: Stay and try a muffin.
+      - ChristmasTreeCourtyard_Option_3: Order a coffee and leave...
+      - Alvin: Thanks, but I should probably get going. There's something I want to check on out by the pond. Just a coffee, please. 
+      - ChaisBakery_YummyInMyTummy: Stay and try a muffin...
+      - Alvin: Sure. I'd love one. Thanks a lot, Bruce. 
 
   ChaisBakery_MaybeSomething:
-    description: TODO
-    # Ask Chai how she has been since the break-up.
-    # She says that her and Marlo have been trying to work things out.
-    # She mentions that he shared with her an exciting new ingredient for her muffins.
-    # Bruce pops up saying that Bam has really loved the new recipe.
-    # Goldie calls and says in a panicked voice “Tim.. Tom.. Come ranny.” 
+    description: 
+      - Alvin: Good morning, Chai! You look as bright and as radiant as ever. 
+      - Chai: Oh, Alvin! You're always so sweet to me. 
+      - Alvin: How have things been? 
+      - Chai: Things have been great. Marlo and I having been working some things out and I feel really good about it. 
+      - Alvin: I'm so happy for you both! That's wonderful to hear. 
+      - Chai: Yeah, he even gifted me a new ingredient for my signature muffins. Such a sweet guy. 
+      - Bruce: Bam has been going on and on all morning about those new muffins of you. Mornin', Alvin. Chai. 
+      - Alvin: Oh! Excuse me. Goldie's calling. Hello! 
+      - Goldie: Alvin! Help! Alvin! Tim.. Tom.. Cranny.. Hu-hurry! 
     actions:
-      - NooksCranny_Option_5: Go to Nook's Cranny. 
-      - ChaisBakery_YummyInMyTummy: Stay and try a muffin. 
-
+      - NooksCranny_Option_5: Go to Nook's Cranny... 
+      - Alvin: Sorry, Chai. Bruce. But I have to go. Something important has come up. I'll catch up with you both later.
+      - ChaisBakery_YummyInMyTummy: Stay and try a muffin... 
+      - Alvin: That was weird. Goldie must have had a weak signal out by the shop. S'pose it won't hurt to try a muffin real quick. 
   ChaisBakery_YummyInMyTummy:
-    description: TODO
-    # Alvin says that the muffin tastes delicious.
-    # Bruce asks Alvin how he feels.
-    # Alvin says that he's pretty sleepy.
+    description: 
+      - Alvin: Chai, this muffin is amazing! Easily your best recipe yet! 
+      - Bruce: Mhm. Yeah. They're great. Say, tell me Alvin... How do you feel? 
+      - Alvin: Uh. Well, I feel great. A little sleepy... I could... I could use a... A nap.. 
+    actions:
+      - LunaDreamImage
+  LunaDreamImage:
+    background: Luna Dream Image
+    description: 
+    actions:
+      - LunaMysteryIsland
     # Then cut to Luna and dream image.
     # Then cut to a mystery island.
-    # Alvin wakes up and he finds a note that says "You greedy moron. I always win in the end. Your nemesis who won Marlo."
+      - Alvin: Huh? Where... Where am I? This isn't Camden. What happened? Hello! Is- Is anyone there? Wait... What's this in my hand?
+      - Alvin: It's a note... 'I always win, Alvin. One way or another, I always come out on top. Enjoy your new home. - Your Nemisis who WON, Marlo'
     actions:
       - Ending_YummyInMyTummy
 
 # Act 8: Nook's Cranny
   NooksCranny_Option_1:
     background: Nook's Cranny
-    description: TODO
-    # Tommy says that it's such a surprise to see Alvin.
-    # Alvin says that Goldie saw them earlier with something that looked like a big shipment.
-    # Tommy says that he doesn't know what Alvin is talking about.
-    # Alvin presses saying that Goldie mentioned them wearing gloves and masks.
-    # Tommy responds saying that they’ve been at the shop all day, but if they see anything suspicious they’ll let Alvin know.
-    # Tommy nudges Timmy and says they have to get back to work.
-    # Tommy goes into the back.
-    # Timmy slips Alvin a note that says “Marlo Mountain” and runs off.
+    description: 
+      - Alvin: Timmy! Tommy! Hey, how are you guys doing? 
+      - Tommy: Oh! Alvin... Hi. What-a... What brings you to the store today? 
+      - Alvin: I just got a call from Goldie. She said that you guys recieved a big shipment today. I was wondering if you needed any help. 
+      - Tommy: What? No. We didn't receive any big shipments of anything. Goldie must be mistaken. 
+      - Timmy: Mistake...
+      - Alvin: Oh. Okay. Well, mind if I come in and shop around for a bit? I heard from Julian you were having some good sales.  
+      - Tommy: Uh... Not anymore. We're all sold out. The store is closed up for the day. 
+      - Alvin: Oh. Okay... 
+      - Tommy: Come on Timmy. Let's get inside and finish up with the... Uh... The thing. 
+      - Timmy: Pst.. Take this... 
+      - Alvin: It's a note. It says 'Marlo' and 'mountain'. Okay. But, what does that mean? 
     actions:
-      - ChristmasTreeCourtyard_Option_1
+      - ChristmasTreeCourtyard_Option_1: Head to the Festive Plaza...
 
   NooksCranny_Option_5:
-    description: TODO
-    # Tommy says that it's such a surprise to see Alvin.
-    # Alvin says that Goldie seemed in trouble and told him to come to the shop.
-    # Tommy says that he doesn't know what Alvin is talking about.
-    # They haven't seen Goldie all day.
-    # Tommy nudges Timmy and says they had better get back to work.
-    # Tommy runs off.
-    # Timmy slips Alvin a note that says “Goldie is safe… for now. Stop Marlo. Mountain.”
+    description: 
+      - Alvin: Timmy! Tommy! Hey, what's going on with Goldie? I just got a call from her. It sounded like something was wrong. 
+      - Tommy: What? No! Nothing's wrong. We... Uh... We haven't seen Goldie all day. 
+      - Alvin: Oh. Really? I could have sworn I head her say your names...
+      - Tommy: Perhaps she was just a little enthusiastic about our big sale. 
+      - Alvin: Maybe... Mind if I head in and have a look around? 
+      - Tommy: Oh... Well, actually the sale is over.
+      - Timmy: Over...
+      - Tommy: The shop will be closed for the rest of the day. Now, we really need to go. Timmy, come on. Quickly. 
+      - Timmy: Pst... Take this...
+      - Alvin: It's a note. It says 'Goldie safe' and ' Marlo mountain'. But... What does that mean? 
     actions:
-      - ChristmasTreeCourtyard_Option_4
+      - ChristmasTreeCourtyard_Option_4: Head to the Festive Plaza...
 
 # Act 9: Christmas Tree Courtyard
   ChristmasTreeCourtyard_Option_1:
     background: Christmas Tree Courtyard
-    description: TODO
-    # Alvin notices Bam placing packages around the island.
-    # Bam responds with how he's just trying to spread a little holiday cheer.
-    # Alvin mentions how nervous Bam looks.
-    # Bam snaps at Alvin and tells him to mind his own business.
-    # Bam runs off.
+    description: 
+      - Alvin: Bam! Hey! How's it going? Did you donate all of these gifts for the holiday gift exchange? 
+      - Bam: Buzz off, man. This doesn't have anything to do with you. 
+      - Alvin: Okay. Uh, what's gotten into you? 
+      - Bam: What? A guy can't go about spreading some holiday cheer without being drilled into? Just drop it. 
+      - Alvin: Dude. Bam, I don't understand why you're acting this way. It's me, Alvin. We're friends, remember? 
+      - Bam: Mind your own business then, FRIEND! 
+      _Alvin: Bam! No, wait! Why... Why did you run off? 
     actions:
-      - Mountain_Option_1: Continue on to the Mountain
-      - Lake_Option_2: Follow Bam
-      - ChristmasTreeCourtyard_Option_2: Investigate boxes
+      - Mountain_Option_1: Continue on to the Mountain...
+      - Lake_Option_2: Follow Bam...
+      - ChristmasTreeCourtyard_Option_2: Investigate the boxes...
 
   ChristmasTreeCourtyard_Option_2:
-    description: TODO
-    # Alvin mentions how he’s getting really sleepy.
+    description:
+      - Alvin: Bam seemed so out of it. I wonder why he got tense about these packages he's been dropping off... 
+      - Alvin: *open*
+      - Alvin: It's just a bunch of powder. *Sniff*
+      - Alvin: That's strange... I feel... I feel... 
     # Then cut to Luna and dream image.
     # Then cut to a mystery island.
     # Alvin wakes up and he finds a note that says “You snoopy idiot. I always win in the end. Your nemesis - who won - Marlo.”
+       - Alvin: Whoa... Wait. Where am I am? How... How did I get here and what's this in my hand? 
+       - Alvin: It's a crumpled up note. 'I always get what I want, Alvin. Always. Enjoy your new home - Your Nemisis -who WON- Marlo.'
     actions:
       - Ending_SnoopingIdiot
 
   ChristmasTreeCourtyard_Option_3:
-    description: TODO
-    # Alvin notices Bam placing packages around the island.
-    # Bam responds with how he's just trying to spread a little holiday cheer.
-    # Alvin mentions how nervous Bam looks.
-    # Bam snaps at Alvin and says that Alvin should stop asking so many questions.
-    # Bam places the last box down and runs off.
-    # Alvin mentions how strange Bam's behavior has been.
+    description: 
+      - Alvin: Holy cow! Bam, did you donate all of these presents to the Camden gift exchange? 
+      - Bam: Wha-What? Oh... Alvin. Yeah. I, uh, I'm just doing my best to spread a little holiday cheer. 
+      - Alvin: That's super neat! Though, you look a little tense. Is everything okay? 
+      - Bam: Keep your nose out from where it doesn't belong, Alvin. Everything is fine. Everything is just fine. 
+      - Alvin: Whoa. Dude, chill. There's no reason to get so defensive. 
+      - Bam: Just mind your own business! 
+      - Alvin: Hey! Wait! Where are you going? You don't need to run off. 
     actions:
-      - ChristmasTreeCourtyard_Option_2: Investigate boxes
-      - Lake_Option_3: Run after Bam
+      - ChristmasTreeCourtyard_Option_2: Investigate the boxes...
+      - Lake_Option_3: Follow Bam...
 
   ChristmasTreeCourtyard_Option_4:
-    description: TODO
-    # Alvin notices Bam placing packages around the island.
-    # Bam responds with how he’s just trying to spread a little holiday cheer.
-    # Alvin mentions how nervous Bam looks.
-    # Bam says that Alvin should stop asking so many questions unless he wants to end up like Goldie.
-    # Bam runs off.
+    description: 
+      - Alvin: Oh. Hey, Bam! Are you dropping off all of those presents for the gift exchange? 
+      - Bam: Yeah. What of it? 
+      - Alvin: Nothing. It's just a lot of gifts. Have you noticed anything strange about Timmy and Tommy today? 
+      - Bam: What? No. Everything's fine. Timmy and Tommy aren't up to anything. 
+      - Alvin: Really? 'Cause Goldie called and she said something-
+      - Bam: Buzz off, man! Nothing's going on so you should just keep your nose out of everyone else's business. 
+      -Alvin: Bam, wait! Why are you... Why are you running away?
     actions:
-      - Lake_Option_6: Follow Bam
-      - Mountain_Option_7: Continue to the Mountain
+      - Lake_Option_6: Follow Bam...
+      - ChristmasTreeCourtyard_Option_2: Investigate the boxes...
+      - Mountain_Option_7: Continue to the Mountain...
 
 # Act 10: Mountain
   Mountain_Option_1:
     background: Mountain
-    description: TODO
-    # Alvin notices all the weeds that have sprouted up around the mountain.
-    # He spots Marlo in a mask and with gloves.
-    # Marlo is carrying a bag of weeds.
-    # Alvin asks Marlo what he's doing.
-    # Marlo says that he's taking back what's rightfully his.
-    # The island.
-    # Alvin asks what Marlo means.
-    # Marlo says that he should have been the Island Representative and that if Alvin doesn't step down and leave the island, he will regret it.
+    description:
+      - Alvin: It's a lot colder up here than I thought it would- Whoa... That's a lot of glowing weeds. And... Wait. There's Marlo! 
+      - Alvin: Marlo! Hey, Marlo! What are you doing all the way up here? 
+      - Marlo: Alvin. I had a suspicion that you'd find me. I'm just ensuring that I take back what should have been mine. 
+      - Alvin: What are you talking about?
+      - Marlo: You never should have won the election. These weeds are the key to me reclaiming my spot as Island Representative. 
+      - Marlo: There's a pollen in the weeds that makes people susceptible to being influenced and I'm the only one who knows the antidote. 
+      - Alvin: You can't just go around manipulating people, Marlo. It's wrong and you know it. 
+      - Marlo: You winning the election was wrong! Look, Alvin, either you step down and leave the island willingly, or I'll make you.
     actions:
-      - Lake_Option_1: I'll never let you win.
-      - MysteryIsland_Option_4: Fine. You win.
+      - Lake_Option_1: I'll never let you win...
+      - Alvin: I'll never let you win, Marlo. Not like this. 
+      - Marlo: HA! Good luck trying to stop me!
+      - MysteryIsland_Option_4: Fine. You win...
+      - Alvin: Alright. Alright, Marlo. I'll step down, but only if you give me your word that you'll get rid of that horrible plant! 
+      - Marlo: As soon as you're off the island and I'm reinstated as Island Representative, I'll get rid of everything. 
 
   Mountain_Option_7:
-    description: TODO
-    # Alvin notices all the weeds that have sprouted up around the mountain.
-    # He spots Marlo in a mask and with gloves.
-    # Marlo is carrying a bag of weeds.
-    # Alvin asks Marlo what he's doing.
-    # Marlo says that he's taking back what's rightfully his.
-    # The island.
-    # Alvin asks what Marlo means.
-    # Marlo says that he should have been the Island Representative and that if Alvin doesn't step down and leave the island, he will regret it.
+    description: 
+      - Alvin: I don't get what's going on with everyone. First Goldie. Then Timmy and Tommy. Now Bam. What's gotten into everyone? 
+      - Alvin: Hm. Wait... That's Marlo. At least Timmy's note was actually useful. Hey! Hey, Marlo. What are you doing up here? 
+      - Marlo: Typical Alvin, popping up where he isn't wanted. I hope you've enjoyed your time as Island Representative because it's almost over. 
+      - Alvin: What do you mean? 
+      - Marlo: I mean, these weeds are my ticket back into power. Soon the whole island will be under my command unless you step down now. 
+      - Alvin: But I won the election fair and square. You can't just go around manipulating people into giving you what you want. 
+      - Marlo: I always get what I want in the end. One way, or another. So what's it gonna be? The hard way or the easy way? 
     actions:
-      - Lake_Option_8: I'll never let you win.
-      - MysteryIsland_Option_4: Fine. You win.
+      - Lake_Option_8: I'll never let you win...
+      - Alvin: I'll never let you win this way! 
+      - Marlo: Oh, foolish Alvin. I already have! 
+      - MysteryIsland_Option_4: Fine. You win...
+      - Alvin: Alright, fine! I'll step down. Please, just don't hurt anyone. 
+      - Marlo: Atta boy. I knew you'd see things my way. 
 
 # Act 11: Lake
   Lake_Option_1:
-    description: TODO
     background: Lake
-    # Alvin follows Marlo to the lake where he finds Bam and Bruce and Marlo all about to throw the bags of glowing weeds into the lake.
-    # Alvin pleads for them to stop and asks if this is what Chai would want.
-    # Marlo claims that Chai wants a man who's a winner, someone with power and strength and that he'd never be good enough for Chai until he wins.
-    # Chai shows up, saying that she heard what he said since she lives right next to the lake.
-    # She explains that she doesn't want a powerful, strong man - just an honorable one.
-    # She says that she'll take Marlo back and they can move to a new island together to start fresh, but only if he agrees to let his vendetta go.
-    # He agrees and says he'll send the weeds back with Redd to where they came from.
+    description: 
+      - Alvin: Bam? Bruce? What are you both doing here... Why do you have those big bags, just like Marlo? 
+      - Bruce: Marlo promised to contract with my construction company for all the island renovations we've got planned. I'm going to be rich! 
+      - Bam: Yeah! We'll be running this island like kings. 
+      - Marlo: You're too late Alvin. Once we dump these weeds into the island's drinking water, everyone who be on my side. Face it, you lost! 
+      - Alvin: Guys, think about what you're doing. You can't feel good about this. Marlo, you know this isn't what Chai would want. 
+      - Marlo: You don't know what Chai wants! I do! She wants someone with power, prestige - it's what she deserves and I'm going to be that for her! 
+      - Chai: You're wrong, Marlo. I never cared about what position you held. I just wanted you to treat me like an equal. 
+      - Marlo: Chai! Wh-what are you doing here? 
+      - Chai: My shop is literally right there. I heard everything. Please, Marlo don't do this. It's not too late. You can still be the better man. 
+      - Bruce: Don't listen to her. Marlo, we had a deal! 
+      - Marlo: You'd still have me? Even after all of this? 
+      - Chai: I will. We could even go somewhere new. Start fresh. Together. What do you say? 
+
+  
     actions:
       - Airport_Option_5
 
   Lake_Option_2:
-    description: TODO
-    # Alvin finds Bam and Bruce at the lake with large glowing bags.
-    # Alvin demands to know what they are doing.
-    # Bruce tells Alvin that he needs to drop it and leave.
-    # Alvin says that he won't leave until they tell him what they're doing.
-    # Bam shouts at Alvin and says that they're going to take everything from Alvin just like he took everything from them when he won the election.
-    # Alvin asks if that's what this is all about.
-    # Bruce says yes, but that all of this could stop if Alvin just agrees to step down as Island Representative and agrees to leave the island for good and let Marlo take over.
+    description: 
+      - Alvin: The lake... Why would Bam come to the lake... OH! There's Bruce, too! He's got massive bags that are... That are glowing...
+      - Alvin: Guys! What's going on? Bam, you just ran off after blowing up on me out of nowhere and Bruce, what's with the bags?
+      - Bam: I told you to mind your own business, pal! Now, get lost! 
+      - Bruce: This doesn't concern you, Alvin. Move along. Or better yet, just resign! You never should have won the election in the first place. 
+      - Alvin: That's what all this is about? The election? 
+      - Bruce: Of course it's about the election. Marlo and me had a plan. We were going to get rich while bringing Camden into the 21st century. 
+      - Bam: If you don't step down and get lost, we'll dump these weeds into the island's drinking water and then Marlo will turn everyone against you! 
     actions:
-      - MysteryIsland_Option_4: Agree to leave the island.
-      - Lake_Option_5: Say you'll never let them win.
+      - MysteryIsland_Option_4: Fine, I'll step down...
+      - Alvin: Alright! Fine. If you guys are willing to go to such extremes as to harm other people... Fine. I'll step down. Just stop. Please.
+      - Lake_Option_5: I'll never let you win...
+      - Alvin: I won't let you guys get away with this. 
 
   Lake_Option_3:
-    description: TODO
-    # Alvin finds Bam and Bruce at the lake with large glowing bags.
-    # Alvin demands to know what they are doing.
-    # Bruce tells Alvin that he needs to drop it and leave.
-    # Alvin says that he won't leave until they tell him what they're doing.
-    # Bam shouts at Alvin and says that they're going to take everything from Alvin just like he took everything from them when he won the election.
-    # Alvin asks if that's what this is all about.
-    # Bruce says yes, but that all of this could stop if Alvin just agrees to step down as Island Representative and agrees to leave the island for good and let Marlo take over.
+    description: 
+      - Alvin: Why would Bam come to the lake? And... And what is Bruce doing here? 
+      - Alvin: Hey, guys! What's going on? Bam, you just bolted and Bruce... What's with those bags? 
+      - Bam: You should have just minded your own business! 
+      - Bruce: Get lost, Alvin. Or better yet, resign. Marlo should have won that election, not you! 
+      - Alvin: Is that what this is about? You're both upset that I won? 
+      - Bruce: Of course we're upset! We had a plan, Alvin! We were going to work with Marlo to bring Camden into the 21st century! 
+      - Bam: And make a lot of money... 
+      - Bruce: Once these weeds mix with Camden's drinking water, Marlo will have the whole island under his control. He'll turn everyone against you! 
+      - Bam: Unless you agree, right here and now, to step down as Island Representative. The choice is yours, Alvin. What's it gonna be? 
     actions:
-      - MysteryIsland_Option_4: Agree to leave the island.
-      - Lake_Option_5: Say you'll never let them win. Continue to option 5
+      - MysteryIsland_Option_4: Fine, I'll step down...
+      - Alvin: Fine! Alright. There's no reason to hurt anyone. I'll... I'll step down. 
+      - Lake_Option_5: I won't let you win...
+      - Alvin: No. I'll never let you get away with this. 
 
   Lake_Option_6:
-    description: TODO
-    # Alvin finds Bam and Bruce at the lake with large glowing bags.
-    # Alvin demands that they release Goldie who is tied up and sleeping.
-    # Bruce tells Alvin that he needs to drop it and leave.
-    # Alvin says that he won't leave until they free Goldie and tell him what they're doing.
-    # Bam shouts at Alvin and says that they're going to take everything from Alvin just like he took everything from them when he won the election.
-    # Alvin asks if that's what this is all about.
-    # Bruce says yes, but that all of this could stop if Alvin just agrees to step down as Island Representative and agrees to leave the island for good and let Marlo take over.
+    description: 
+      - Alvin: Why did Bam come all the way to the lake? Hold up... Bruce is here, too. And so it, Goldie. But, how come Goldie is tied up? 
+      - Alvin: Bruce! Bam! What's going on? Why is Goldie tied up? What did you do to her? 
+      - Bam: Back off, Alvin. 
+      - Bruce: Yeah, just walk away. Or better yet, resign! 
+      - Alvin: What are you talking about? Guys, I thought we were friends. I don't understand what's going on. Why are you doing this? 
+      - Bruce: Marlo and me had a plan. We were going to bring Camden into the 21st century, but now that's all ruined because of you! 
+      - Bam: Once we mix these weeds with the island's drinking water, then Marlo will have everyone under his control. Everyone will turn against you!
+      - Bruce: The only way we'll stop is if you agree to resign. The choice is yours, Alvin. Think quickly or else our hands might just slip. 
     actions:
-      - MysteryIsland_Option_4: Agree to leave the island.
-      - Lake_Option_5: Say you'll never let them win. Continue to option 5
+      - MysteryIsland_Option_4: Fine. I'll step down...
+      - Alvin: Okay, okay. I'll resign. Please, don't hurt anyone and let Goldie go. She has nothing to do with this. 
+      - Lake_Option_5: I won't let you win...
+      - Alvin: You think that after everything you've done, I'm just going to walk away? Not a chance! Look what you're done to Goldie! 
 
   Lake_Option_8:
-    description: TODO
-    # Alvin follows Marlo to the lake where he finds Goldie tied up and Bam with Bruce are standing at the lake about to throw the bags of weed into it.
-    # Alvin demands that they let Goldie go and he asks if this is what Chai would have wanted.
-    # Marlo claims that Chai wants a man who's a winner, someone with power and strength and that he'd never be good enough for Chai until he wins.
-    # Chai shows up, saying that she heard what he said since she lives right next to the lake.
-    # She explains that she is very disappointed in Marlo and how he has hurt Goldie and she doesn't want a powerful, strong man - just an honorable one.
-    # She says that she'll take Marlo back and they can move to a new island together to start fresh, but only if he agrees to let his vendetta go.
-    # He agrees and says he'll send the weeds back with Redd to where they came from.
+    description: 
+      - Alvin: For a guy with short legs, Marlo sure can book it when he wants to. What's he doing now at the lake with Bruce... Bam... and Goldie! 
+      - Alvin: Goldie! Hey! Are you okay? You guys need to leave her alone! She's go nothing to do with any of this. 
+      - Marlo: This is really all your fault, Alvin. You sent her off on her own and now she's paying the price for your laziness. Resign. Now! 
+      - Ban: Yeah, or else we'll toss her in the lake along with all the weeds and she'll be the first to turn against you! 
+      - Alvin: Marlo... This isn't right. You know that. Is this... It this what Chai would have wanted? 
+      - Marlo: Chai wants someone with power, prestige. When you won the election, you all but shattered what remained between us. It's your fault!
+      - Chai: No, Marlo! You're wrong! 
+      - Marlo: Wha! Where did you come from? How much did you hear? 
+      - Chai: I heard everything. My bakery is literally right there. Marlo, I never cared about power. I just wanted you to be more present with me. 
+      - Bruce: Don't listen to her, Marlo! We have an agreement! 
+      - Marlo: Hush! Chai... You'd still be willing to make things work between us? Even after everything I've done? 
+      - Chai: Yes. Yes, I would. We could even go somewhere new. We could start fresh. Together. What do you say, Marlo? Will you give us another chance? 
     actions:
       - Airport_Option_2
 
   Lake_Option_5:
-    description: TODO
-    # Marlo Shows up and tells Alvin that he's too late.
-    # Alvin asks Marlo if this is what Chai would have wanted.
-    # Marlo claims that Chai wants a man who's a winner, someone with power and strength and that he'd never be good enough for Chai until he wins.
-    # Chai shows up, saying that she heard what he said since she lives right next to the lake.
-    # She explains that she doesn't want a powerful, strong man - just an honorable one.
-    # She says that she'll take Marlo back and they can move to a new island together to start fresh, but only if he agrees to let his vendetta go.
-    # He agrees and says he'll send the weeds back with Redd to where they came from.
+    description: 
+    - Marlo: You're too late! I've already all but won! 
+    - Bam: Hey, boss! Come to join in the fun? 
+    - Bruce: Yeah! Alvin is already shaking in his boots. He knows it's over. Soon the whole island will despise you! 
+    - Alvin: Marlo, stop! Please reconsider. Is this... Is this what Chai would have wanted? 
+    - Marlo: Chai wants someone who has power. When you won the election, you all but ruined my chances of ever working things out with Chai!
+    - Chai: You're wrong, Marlo! 
+    - Marlo: Wha! Where did you come from? How much have you heard? 
+    - Chai: I heard everything. My bakery is literally right there. Marlo, I never cared about power. I only wanted you to be more present with me. 
+    - Bruce: Don't listen to her! Marlo, we have an agreement! 
+    - Marlo: Oh, shut it! Chai... Are you saying that you'd still be willing to make things work between us? Even after everything I've done? 
+    - Chai: Yes, Marlo. Yes. We could even start fresh somewhere new. Just us. Together. What do you say? Will you give us another chance? 
     actions:
       - Airport_Option_5
 
   MysteryIsland_Option_4:
     background: Mystery Island
-    description: TODO
-    # Text that says… I wonder if I did the right thing…
+    description:
+    Alvin: Hm... I wonder if I did the right thing. 
     actions:
       - Ending_Sacrifice
 
 # Act 12: Airport
   Airport_Option_5:
     background: Airport
-    description: TODO
-    # Marlo apologizes for what he did and says that he looks forward to starting fresh on a new island.
-    # He goes into the plane.
-    # The plane takes off.
-    # Alvin says that he's worried about Chai and whether she will be okay or not.
-    # Chai shows up and says that she wasn't actually planning to forgive him or leave the island with him.
-    # She had asked Wilbur to make sure Marlo didn't get off when he realized she wasn't there and Wilbur agreed and said he knew exactly where Marlo ought to go.
+    description: 
+      - Marlo: I apologize for the mess I caused, Alvin. I hope that you can forgive me. 
+      - Alvin: I know that things have been hard for you lately. All I can say is that I wish you a better life wherever you're off to. 
+      - Marlo: I appreciate that. Well, uh, take care. 
+      - Alvin: You as well. Goodbye. 
+      - Goldie: Aren't you worried about Chai? With how far Marlo was willing to go, I can't imagine that he'll be all that kind to her. 
+      - Alvin: I am a little worried, but I also trust that Chai knows what she's doing. She's strong. 
+      - Goldie: Well, they're off. I miss her already. 
+      - Chai: Who do you miss? 
+      - Alvin & Goldie: Chai! 
+      - Chai: You didn't actually think that I'd go with him, did you? The guy's insane! 
+      - Goldie: Well done! 
+      - Alvin: I think this calls for a celebration! 
     actions:
       - PresentBeach
 
   Airport_Option_2:
-    description: TODO
-    # Marlo apologizes for what he did and says that he looks forward to starting fresh on a new island.
-    # He goes into the plane.
-    # The plane takes off.
-    # Alvin says to Glodie that he's worried about Chai and whether she will be okay or not.
-    # Goldie says that she's worried, too.
-    # Chai shows up and says that she wasn't actually planning to forgive him or leave the island with him.
-    # She had asked Wilbur to make sure Marlo didn't get off when he realized she wasn't there and Wilbur agreed and said he knew exactly where Marlo ought to go.
+    description: 
+      - Marlo: I'm sorry for the mess I caused, Alvin. I hope you can forgive me.
+      - Alvin: Hey, you just promise to take good care of Chai. She deserves the best version of you that you can offer. 
+      - Marlo: I will. She's everything to me. Well, uh, take care. 
+      - Alvin: You as well. Goodbye. 
+      - Goldie: Aren't you worried about Chai? With how far Marlo was willing to go, I can't imagine that he'll be all that kind to her. 
+      - Alvin: Yeah, I'm a little worried, but I also trust that Chai knows what she's doing. She's strong. 
+      - Goldie: Well, they're off. I miss her already. 
+      - Chai: Who do you miss? 
+      - Alvin & Goldie: Chai! 
+      - Chai: You didn't actually think that I'd go with him, did you? The guy's a psycho! 
+      - Goldie: Well done! 
+      - Alvin: I think this calls for a celebration! 
+
     actions:
       - PresentBeach
 
   PresentBeach:
     background: Present Beach
-    description: TODO
-    # Julian and Goldie and Sprinkles all congratulate Alvin for being such a great Island Representative and say how they had always had faith in him.
-    # Chai runs up and says that she just got a call from Wilbur that Marlo had hijacked the plane and that he was now on some strange ship he'd never seen before.
-    # Marlo takes over the call and says that Alvin may have won this time, but that he ought not to sleep soundly because he was still going to get his revenge someday.
+    description: 
+      - Julian: Alvin! Way to go! I knew you'd make a great Island Representative! 
+      - Fang: Absolutely! You did such a great job standing up to Marlo and the bros! 
+      - Alvin: Thank you both so much! But really, it was mostly Chai who-
+      - Chai: THE PLANE WENT DOWN! 
+      - Alvin: What? 
+      - Chai: Wilbur just called. Apparently, Marlo tried to highjack the plane and they ended up crashing. Wilbur managed to escape with a parachute but...
+      - Alvin: Breathe, Chai. We'll get everything sorted out.
+      - Chai: Alvin, Wilbur said that Marlo swore to get revenge. If he survived the cash... He might try to come back. He can't come back! 
+      -Alvin: We'll figure something out. Just try to calm down. We'll be okay... We'll be okay... 
     actions:
       - Ending_IllBeBack
