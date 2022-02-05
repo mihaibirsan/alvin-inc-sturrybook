@@ -260,7 +260,7 @@ data:
   SecretBeach_AlvinBadMouth:
     location: Secret Beach
     description:
-      - Marlo, right, flip: Redd, you wouldn't believe the night I've had. I lost to Alvin. ALVIN! I taught the boy everything he knew!
+      - Marlo, right, flip: Redd, you wouldn't believe the night I've had. I lost to Alvin. ALVIN! I taught the boy everything he knows!
         Redd, left:
       - Redd: I told you Alvin was sneaky. But did you listen to your cousin Redd? No. No you didn't.
       - Marlo: I'm really not in the mood for this right now. Let's just cut to the chase. Did you bring what we had discussed?
@@ -395,7 +395,7 @@ data:
       - Alvin, left: Mornin', Chai! It's nice to see you smiling again. Got some good news to share?
         Chai, right:
       - Chai: Hey, Alvin. Uh, yeah. Marlo and I have been working through some things and it's going well.
-      - Alvin: That's so cool! I'm glad that you two are trying to making things work.
+      - Alvin: That's so cool! I'm glad that you two are trying to make things work.
       - Chai: Yeah, this morning he even gifted me a new ingredient for my signature muffins.
       - Bruce, right: Mornin' you two. Bam's been raving about the new recipe all morning. Says they're your best muffins yet.
         Chai, middle, flip, nudge-50:
@@ -427,7 +427,7 @@ data:
       - Chai: Things have been great. Marlo and I having been working some things out and I feel really good about it.
       - Alvin: I'm so happy for you both! That's wonderful to hear.
       - Chai: Yeah, he even gifted me a new ingredient for my signature muffins. Such a sweet guy.
-      - Bruce, right: Bam has been going on and on all morning about those new muffins of you. Mornin', Alvin. Chai.
+      - Bruce, right: Bam has been going on and on all morning about those new muffins of yours. Mornin', Alvin, Chai.
         Chai, middle, flip, nudge-50:
       - Alvin: Oh! Excuse me. Goldie's calling. Hello!
       - GoldieOnPhone: Alvin! Help! Alvin! Tim.. Tom.. Cranny.. Hu-hurry!
@@ -478,7 +478,7 @@ data:
       - Alvin: I just got a call from Goldie. She said that you guys recieved a big shipment today. Do you need any help?
       - Tommy: What? No. We didn't receive any big shipments of anything. Goldie must be mistaken.
       - Timmy: ...mistaken.
-      - Alvin: Oh. Okay. Well, mind if I come in and shop around? I heard from Julian you were having some good sales.
+      - Alvin: Oh. Okay. Well, mind if I come in and shop around? I heard from Julian that you were having some good sales.
       - Tommy: Uh... Not anymore. We're all sold out. The store is closed up for the day.
       - Alvin: Oh. Okay...
       - Tommy: Come on Timmy. Let's get inside and finish up with the... Uh... The thing.
@@ -580,7 +580,7 @@ data:
   LunaMysteryIsland_SnoopingIdiot:
     location: Luna's Mystery Island
     description:
-      - Alvin: Whoa... Wait. Where am I am? How... How did I get here and what's this in my hand?
+      - Alvin: Whoa... Wait. Where am I? How... How did I get here and what's this in my hand?
       - Alvin: "It's a note: 'I always get what I want, Alvin. Always. Enjoy your new home — Your Nemisis who WON, Marlo.'"
     actions:
       - Ending_SnoopingIdiot
@@ -787,7 +787,7 @@ data:
         Bruce, left, nudge+100:
         Bam, left, nudge-50:
       - Bam: Hey, boss! Come to join in the fun?
-      - Bruce: Yeah! Alvin is already shaking in his boots. He knows it's over. Soon the whole island will despise you!
+      - Bruce: Yeah! Alvin is already shaking in his boots. He knows it's over. Soon the whole island will despise him!
       - Alvin: Marlo, stop! Please reconsider. Is this... Is this what Chai would have wanted?
       - Marlo: Chai wants someone who has power. When you won the election, you ruined our chances of ever working things out!
       - Chai, right: You're wrong, Marlo!
@@ -820,8 +820,8 @@ data:
         Alvin, left:
       - Alvin: I know that things have been hard for you lately. All I can say is that I wish you a better life wherever you're off to.
       - Marlo: I appreciate that. Well, uh, take care.
-      - Alvin: You as well. Goodbye.
-      - Goldie, left: Aren't you worried about Chai? I can't imagine that he'll be all that kind to her.
+      - Alvin: You as well. Have a safe flight.
+      - Goldie, left: Aren't you worried about Chai? I don't think that Marlo will be all that kind to her.
         Alvin, middle, flip:
         exit: Marlo, Chai
       - Alvin: I am a little worried, but I also trust that Chai knows what she's doing. She's strong.
@@ -830,7 +830,7 @@ data:
         Goldie, middle, flip:
         Alvin, nudge+200:
       - Alvin & Goldie: Chai!!!
-      - Chai: You didn't actually think that I'd go with him, did you? The guy's insane!
+      - Chai: You didn't actually think that I'd go with him, did you? The guy is insane!
         exit: Alvin & Goldie
       - Goldie: Well done!
       - Alvin: I think this calls for a celebration!
@@ -844,8 +844,8 @@ data:
         Alvin, left:
       - Alvin: Hey, you just promise to take good care of Chai. She deserves the best version of you that you can offer.
       - Marlo: I will. She's everything to me. Well, uh, take care.
-      - Alvin: You as well. Goodbye.
-      - Goldie, left: Aren't you worried about Chai? I can't imagine that he'll be all that kind to her.
+      - Alvin: You as well. Have a safe flight.
+      - Goldie, left: Aren't you worried about Chai? I can't imagine that Marlo will be all that kind to her.
         Alvin, middle, flip:
         exit: Marlo, Chai
       - Alvin: Yeah, I'm a little worried, but I also trust that Chai knows what she's doing. She's strong.
@@ -854,7 +854,7 @@ data:
         Goldie, middle, flip:
         Alvin, nudge+200:
       - Alvin & Goldie: Chai!!!
-      - Chai: You didn't actually think that I'd go with him, did you? The guy's a psycho!
+      - Chai: You didn't actually think that I'd go with him, did you? The guy is a psycho!
         exit: Alvin & Goldie
       - Goldie: Well done!
       - Alvin: I think this calls for a celebration!
